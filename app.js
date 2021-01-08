@@ -46,6 +46,6 @@ app.get('/:sub', async(req, res) => {
 
 //width=<%- wile ? wile :`1000`%> height=<%- boy ? boy :`600`%>
 
-const port = 3000;
+const port = process.env.PORT;
 
 app.listen(port, () => console.log(`Port: ${port}`));
